@@ -10,8 +10,9 @@ GraphNode::~GraphNode()
 {
     //// STUDENT CODE
     ////
-
-    delete _chatBot; 
+    // Fix bug "Crash when closing the window":
+    
+    // delete _chatBot; 
 
     ////
     //// EOF STUDENT CODE
