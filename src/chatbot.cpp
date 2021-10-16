@@ -95,12 +95,13 @@ ChatBot &ChatBot::operator=(ChatBot &&source)
 
     if (this == &source) {return *this; }
     
+    delete _image;
     _image = source._image;
     _currentNode = source._currentNode;
     _rootNode = source._rootNode;
     _chatLogic = source._chatLogic;
+    _chatLogic->SetChatbotHandle(this);
 
-    delete source._image;
     source._image = NULL;
     source._currentNode = nullptr;
     source._rootNode = nullptr;
