@@ -19,7 +19,6 @@ private:
 
     // use a unique smart pointer to make chatlogic an exclusive resource
     std::unique_ptr<ChatLogic> _chatLogic;
-    //ChatLogic *_chatLogic;
 
     ////
     //// EOF STUDENT CODE
